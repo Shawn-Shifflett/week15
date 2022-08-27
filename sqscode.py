@@ -7,7 +7,7 @@ def lambda_handler(event, context):
     time = now.strftime("%H:%M:%S")
     sqs = boto3.client("sqs")
     sqs.send_message(
-         QueueUrl="https://sqs.us-east-1.amazonaws.com/767779967756/time",MessageBody= time
+         QueueUrl="https://sqs.us-east-1.amazonaws.com/513843887415/time",MessageBody= time
         )
     return {
         'statusCode': 200,
